@@ -1,7 +1,7 @@
 salt-dev-environment
 ====================
 
-Vagrant settings to start a development environment to test and setup Salt deployments.
+A development environment to test and setup Salt deployments.
 
 #### What's it
 After a vagrant up, you should end up with two virtual machines (master, minion). The master VM will have a intalled and configured salt-master and salt-minion daemons, and the minion VM will have a salt-minion daemon.
