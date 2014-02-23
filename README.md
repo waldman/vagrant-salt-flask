@@ -12,7 +12,7 @@ The Salt minion VM will aready be connected to the master.
 
 #### Usage
 When the vagrant up finishes, connect on the master VM (vagrant ssh master) and run as root:
-> # salt '*' state.highstate
+> \# salt '*' state.highstate
 
 This will run a test.ping on the minion and on the master it self.
 
