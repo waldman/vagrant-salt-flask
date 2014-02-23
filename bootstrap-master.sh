@@ -14,6 +14,8 @@ if [ ! -f vagrant_bootstrap_master ]; then
 
     # Master restart
     service salt-master restart
+    sleep 2
+    service salt-minion restart
 fi
 
 touch vagrant_bootstrap_master
