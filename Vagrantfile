@@ -6,6 +6,9 @@
 #
 
 Vagrant.configure("2") do |config|
+  # General provisioning
+  config.vm.provision :shell, :path => "bootstrap.sh"
+  
   # Salt-master box
   config.vm.define "master" do |master|
     # Box settings
