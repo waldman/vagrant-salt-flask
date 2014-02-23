@@ -8,6 +8,10 @@ if [ ! -f vagrant_bootstrap_master ]; then
     # Installs salt master
     curl -L http://bootstrap.saltstack.org | sudo sh -s -- -M -N
 
+    # Remeving salt configs and linking from synced folder copy
+    rm /etc/salt -rf
+    ln -fs /vagrant/master/etc /etc/salt
+
     # Master restart
     service salt-master restart
 fi
