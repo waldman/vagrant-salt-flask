@@ -12,6 +12,9 @@ Vagrant.configure("2") do |config|
     master.vm.box = "precise32"
     master.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
+    # Hostname settings
+    master.vm.hostname = "salt-master"
+
     # Network settings
     master.vm.network :private_network, ip: "192.168.56.100"
   end
@@ -21,6 +24,9 @@ Vagrant.configure("2") do |config|
     # Box settings
     minion.vm.box = "precise32"
     minion.vm.box_url = "http://files.vagrantup.com/precise32.box"
+
+    # Hostname settings
+    minion.vm.hostname = "salt-minion"
 
     # Network settings
     minion.vm.network :private_network, ip: "192.168.56.101"
