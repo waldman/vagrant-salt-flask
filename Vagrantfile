@@ -20,6 +20,9 @@ Vagrant.configure("2") do |config|
 
     # Network settings
     master.vm.network :private_network, ip: "192.168.56.100"
+
+    # Salt master provision
+    master.vm.provision :shell, :path => "bootstrap-master.sh"
   end
 
   # Salt-minion box
