@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
     webapp.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
     # Hostname settings
-    webapp.vm.hostname = "salt-webapp"
+    webapp.vm.hostname = "webapp"
 
     # Network settings
     webapp.vm.network :private_network, ip: "192.168.56.101"
