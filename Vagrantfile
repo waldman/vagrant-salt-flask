@@ -25,16 +25,16 @@ Vagrant.configure("2") do |config|
     master.vm.provision :shell, :path => "bootstrap-master.sh"
   end
 
-  # Salt-minion box
-  config.vm.define "minion" do |minion|
+  # Salt-webapp box
+  config.vm.define "webapp" do |webapp|
     # Box settings
-    minion.vm.box = "precise32"
-    minion.vm.box_url = "http://files.vagrantup.com/precise32.box"
+    webapp.vm.box = "precise32"
+    webapp.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
     # Hostname settings
-    minion.vm.hostname = "salt-minion"
+    webapp.vm.hostname = "salt-webapp"
 
     # Network settings
-    minion.vm.network :private_network, ip: "192.168.56.101"
+    webapp.vm.network :private_network, ip: "192.168.56.101"
   end
 end
