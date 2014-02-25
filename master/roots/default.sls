@@ -3,6 +3,6 @@
 #
 
 # Testing
-mine.send:
-    module.run:
-        - func: test.ping
+# mine.send:
+#     module.run:
+#         - func: test.ping
