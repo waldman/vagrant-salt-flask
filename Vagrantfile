@@ -36,5 +36,8 @@ Vagrant.configure("2") do |config|
 
     # Network settings
     webapp.vm.network :private_network, ip: "192.168.56.101"
+
+    # Webapp node provision
+    webapp.vm.provision :shell, :path => "bootstrap-webapp.sh"
   end
 end
