@@ -30,4 +30,5 @@ The instruction service supervisor restart doesn't work on Ubuntu 12.04.
 
 The workaround for this setup is to connect on the webapp node, and after the salt-call described above (or after a sucessfull vagrant up in case the aforementined bug doesn't occur) run the following sequence:
 > \# service supervisor stop
+
 > \# service supervisor start
