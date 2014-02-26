@@ -9,6 +9,7 @@ base:
         
     'webapp':
         - nginx
-        - supervisord
+        - supervisor
         - gunicorn
         - python-flask
+        - webapp
