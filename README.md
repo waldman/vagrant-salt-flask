@@ -23,10 +23,10 @@ From the webapp machine:
 After that, run from the webapp machine:
 > \# salt-call state.highstate
 
-This should install and setup every thing.
+This should install and setup everything.
 
 - Ubuntu bug 1021700 - https://bugs.launchpad.net/ubuntu/+source/supervisor/+bug/1021700
-The instruction service supervisor restart doesn't work on Ubuntu 12.04.
+The command *service supervisor restart* doesn't work on Ubuntu 12.04.
 
 The workaround for this setup is to connect on the webapp node, and after the salt-call described above (or after a sucessfull vagrant up in case the aforementined bug doesn't occur) run the following sequence:
 > \# service supervisor stop
